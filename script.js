@@ -49,7 +49,7 @@ async function sendForm(event) {
         message: document.querySelector("#message").value
     };
 
-    const res = await fetch("http://localhost:5000/api/contact/send", {
+    const res = await fetch("https://v3j-backend.onrender.com/api/contact/send", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data)
@@ -103,7 +103,7 @@ document.addEventListener("DOMContentLoaded", () => {
         };
 
         try {
-            const response = await fetch("http://localhost:5000/api/appointment/create", {
+            const response = await fetch("https://v3j-backend.onrender.com/api/appointment/create", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
