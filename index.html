@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>V3J Automotive Solutions</title>
+
+    <!--custom CSS-->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- box icons -->
+    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+    <link href='https://cdn.boxicons.com/fonts/brands/boxicons-brands.min.css' rel='stylesheet'>
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&family=Quicksand:wght@300..700&family=Rouge+Script&family=Tourney&family=Saira+Stencil+One&display=swap" rel="stylesheet">
+
+</head>
+
+<!-- Website designed & developed by GhostDevKA -->
+
+<body>
+    <header class="header">
+        <img src="assets/Photo Logo4 wh.png" alt="V3J Automotive Solutions">
+        <!-- h2>V3J Auto</h2 -->
+
+        <div class="navhead">
+            <nav class="navbar">
+                <a href="#home" class="active">Home</a>
+                <a href="#about">About Us</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#appointment">Appointments</a>
+                <a href="#contact">Contact Us</a>
+                <a href="ourprojects.html">Our Projects</a>
+            </nav>
+            <i class='bx  bx-menu-wide' id="menu-icon"></i>
+        </div>
+    </header>
+
+    <section class="home" id="home">
+    <div class="home-content">
+        <div class="home-txt">
+        <h1>Welcome to the</h1><br>
+        <div class="masking-container">
+        <h1 class="masked-text">V3J Automotive Solutions</h1>
+        </div>
+        <!--h1>V3J Automotive Solutions</h1-->
+        <br>
+        <h2>We are here to help you with anything ralated to vehicles.</h2><br>
+        <h3>Tell your problems, we give solutions...</h3>
+    </div>
+    <div class="home-img">
+        <img src="assets/home-img.png" alt="">
+    </div>
+    </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="about-content">
+        <div class="about-img">
+            <img src="assets/about-img.png" alt="">
+        </div>
+        <div class="about-txt">
+            <h2 class="heading">About Us</h2>
+            <h3>We are fully authorized company providing best automotive solutions in the island.</h3>
+            <br>
+            <h3>V3J Automotive solutions</h3>
+
+            <div class="social-media">
+            <a href="https://www.facebook.com" target="_blank"><i class='bxl  bx-facebook-circle'> </i></a>
+            <a href="https://www.instagram.com" target="_blank"><i class='bxl  bx-instagram'></i></a>
+            <a href="https://www.tiktok.com" target="_blank"><i class='bxl  bx-tiktok'></i></a>
+            </div> 
+        </div>
+        </div>
+    </section>
+
+    <section class="gallery" id="gallery">
+        <div class="gallery-img">
+        <img src="assets/gallery-img.jpg" alt="">
+        </div>
+        <div class="gallery-content">
+        <h2 class="heading">Gallery</h2>
+        <div class="img-container">
+            <div class="img-box">
+                <img src="assets/gal-1.png" alt="">
+                <div class="txt-box">
+                    <p>Photo 1</p>
+                </div>
+            </div>
+            <div class="img-box">
+                <img src="assets/gal-1.png" alt="">
+                <div class="txt-box">
+                    <p>Photo 2</p>
+                </div>
+            </div>
+            <div class="img-box">
+                <img src="assets/gal-1.png" alt="">
+                <div class="txt-box">
+                    <p>Photo 3</p>
+                </div>
+            </div>
+            <div class="img-box">
+                <img src="assets/gal-1.png" alt="">
+                <div class="txt-box">
+                    <p>Photo 4</p>
+                </div>
+            </div>
+            <div class="img-box">
+                <img src="assets/gal-1.png" alt="">
+                <div class="txt-box">
+                    <p>Photo 5</p>
+                </div>
+            </div>
+            <div class="img-box">
+                <img src="assets/gal-1.png" alt="">
+                <div class="txt-box">
+                    <p>Photo 6</p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section class="appointment" id="appointment">
+      <div class="appointment-img">
+      <img src="assets/contact-img.jpg" alt="">
+      </div>
+      <h2 class="heading">Make an Appointment</h2>
+      <div class="appointment-content">
+      <div class="appointment-left">
+        <div class="appointment-form">
+        <form id="appointment-form">
+          <div class="input-box">
+            <p>Your Name</p>
+            <input type="text" placeholder="Eg: Udana Perera" id="cus-name">
+          </div>
+          <div class="input-row">
+          <div class="input-box">
+            <p>Contact Number</p>
+            <input type="text" inputmode="numeric" pattern="[0-9]*" placeholder="Eg: 07xxxxxxxx" id="cus-phone">
+          </div>
+          </div>
+        
+        <div class="input-box">
+        <p>Vehicle Model</p>
+        <input type="text" placeholder="Eg: BMW M5 2019" id="vehicle-model">
+        </div>
+
+        <div class="input-box">
+        <p>Appointment Purpose</p>
+        <textarea id="purpose" cols="30" rows="2" placeholder="Eg: Check the AC system"></textarea>
+        </div>
+
+        <div class="input-row">
+        <div class="input-box">
+            <p>Date</p>
+            <input type="date" id="app-date">
+        </div>
+
+        <div class="input-box">
+            <p>Time</p>
+            <input type="time" id="app-time">
+        </div>
+        </div>
+
+        <div class="app-btn">
+        <input type="submit" value="Create Appointment" class="btn">
+        </div>
+        </form>
+        </div>
+        </div>
+        <div class="appointment-right">
+        <h3>Calendar</h3>
+        <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=2&ctz=Asia%2FColombo&showPrint=0&src=djNqYXV0b21vdGl2ZXNvbHV0aW9uc0BnbWFpbC5jb20&src=ZW4ubGsjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23039be5&color=%230b8043"
+        class="calendar-frame"
+            frameborder="0"
+            scrolling="no">
+        </iframe>
+        </div>
+        </div>
+        </section>
+
+    <section class="contact"  id="contact">
+        <div class="contact-img">
+        <img src="assets/contact-img.jpg" alt="">
+        </div>
+        <h2 class="heading">Contact Us</h2>
+        <div class="contact-content">
+            <div class="email-container">
+                <form id="contactForm" onsubmit="sendForm(event)">
+                <div class="input-box">
+                  <input type="text" placeholder="Full Name" id="name">
+                </div>
+                <div class="input-box">
+                  <input type="email" placeholder="Email Address" id="email">
+                </div>
+                <div class="input-box">
+                  <input type="text" inputmode="numeric" pattern="[0-9]*" placeholder="Mobile Number" id="phone">
+                </div>
+                <div class="input-box">
+                  <input type="text" placeholder="Email Subject" id="subject">
+                </div>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message"></textarea>
+            
+
+                <input type="submit" value="Send" class="btn" id="submit">
+
+              </form>
+            </div>
+        <div class="contact-txt">
+            <div class="txt-row">
+            <i class='bx  bxs-phone'> </i>  <p>071-955 8388</p> 
+            </div>
+            <div class="txt-row">
+            <i class='bx  bxs-location-alt-2'></i>  <p>Mobile Service - Around Malabe & Maharagama</p> 
+            </div>
+        </div>
+        </div>
+    </section>
+    
+    <footer class="footer">
+    <div class="footer-left">
+        <img src="assets/Photo Logo4 wh.png" alt="V3J Automotive Solutions">
+        <div class="footer-txt">
+            <p>Copyright &copy; 2025 by V3J Automotive Solutions. | All Rights Reserved. 
+                <br><span style="font-size: 0.9em; color: #aaa;">
+                | Developed by <a href="https://kasun-akalanka-web.vercel.app/" target="_blank">GhostDevKA</a></span></p>
+        </div>
+    </div>
+    <div class="footer-btn">
+        <a href="#home"><i class='bxr  bxs-chevron-up-square'></i></a>
+    </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
