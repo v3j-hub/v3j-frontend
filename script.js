@@ -36,7 +36,7 @@ window.onscroll = () => {
 };
 
 
-/*===== Contact form =====
+/*===== Contact form =====*/
 
 async function sendForm(event) {
     event.preventDefault();
@@ -63,42 +63,8 @@ async function sendForm(event) {
     } else {
         alert("Failed to send message!");
     }
-}  */
-
-
-/*===== Contact form using mailto =====*/
-
-function sendForm(event) {
-    event.preventDefault();
-
-    const name = document.querySelector("#name").value.trim();
-    const email = document.querySelector("#email").value.trim();
-    const phone = document.querySelector("#phone").value.trim();
-    const subject = document.querySelector("#subject").value.trim();
-    const message = document.querySelector("#message").value.trim();
-
-    //validation
-    if (!name || !email || !phone || !subject || !message) {
-        alert("Please fill all required fields ❗");
-        return;
-    }
-
-    const phoneRegex = /^(07[0-9]{8})$/;
-    if (!phoneRegex.test(phone)) {
-        alert("Please enter a valid phone number (Ex: 07xxxxxxxx) ❗");
-        return;
-    }
-
-    const body = encodeURIComponent(
-        `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\n\nMessage:\n${message}`
-    );
-
-    const mailtoLink = `mailto:v3jautomotivesolutions@gmail.com?subject=${encodeURIComponent(subject)}&body=${body}`;
-
-    window.location.href = mailtoLink;
-
-    document.querySelector("#contactForm").reset();
 }
+
 
 
 /*===== Appoinment form =====*/
